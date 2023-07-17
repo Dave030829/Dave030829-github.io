@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+var exportedValues;
+
 const input1 = document.getElementById("input1");
 const input2 = document.getElementById("input2");
 const input3 = document.getElementById("input3");
@@ -23,7 +25,6 @@ const inputValue3 = input3.value;
 
 function checkGender() {
     var gender = document.querySelector('input[name="gender"]:checked').value;
-    var result = document.getElementById("output");
     
     if (gender === "male") {
         var input1 = parseInt(document.getElementById("input1").value);
@@ -37,6 +38,12 @@ function checkGender() {
         var output = document.getElementById("output");
         output.innerHTML = "Maintanance calories: "+eredmenyMale+"<br>Bulking calories: "+bulking+"<br>Cutting calories: "+cutting;
 
+        return(
+            eredmenyMale,
+            bulking,
+            cutting
+        )
+
     } else if (gender === "female") {
         var input1 = parseInt(document.getElementById("input1").value);
         var input2 = parseInt(document.getElementById("input2").value);
@@ -49,5 +56,19 @@ function checkGender() {
         var output = document.getElementById("output");
         output.innerHTML = "Maintanance calories: "+eredmenyFemale+"<br>Bulking calories: "+bulkingFe+"<br>Cutting calories: "+cuttingFe;
 
-    } 
-  }
+        return(
+            eredmenyFemale,
+            bulkingFe,
+            cuttingFe
+        )
+      
+   }
+}
+
+export { 
+    eredmenyMale,
+    bulking,
+    cutting,
+    eredmenyFemale,
+    bulkingFe,
+    cuttingFe};

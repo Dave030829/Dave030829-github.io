@@ -5,6 +5,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #EAE7D6;
 }
+
 .welcome-text h1{
     display: flex;
     text-align: center;
