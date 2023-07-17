@@ -49,28 +49,30 @@ header{
 }
 
 .navbar{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    background-color: #1E1F23;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #1E1F23;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 10px;
 }
 
 .navbar .links{
-    font-size: 140%;
-    display: flex;
-    gap: 2rem;
-    padding: 5%;
+  font-size: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar .toggle_btn{
-    color: #EAE7D6;
-    cursor: pointer;
-    display: none;
-    padding: 5%;
-    font-size: 150%;
+  color: #EAE7D6;
+  cursor: pointer;
+  display: none;
+  padding: 5%;
+  font-size: 150%;
 }
 
 .welcome_tag h1{
@@ -255,8 +257,25 @@ header{
     align-items: center;
 }
 
+.dropdown_menu li a .language{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11%;
+}
+
+.language img {
+  max-width: 40%; /* Set the maximum width to 100% */
+}
+
+.language {
+  margin-right: 10px;
+  display: inline-block;
+  line-height: 0; /* Add this line to remove extra spacing */
+}
+
 .dropdown_menu.open{
-    height: 110%;
+  height: 165%;
 }
 
 /*continue button*/

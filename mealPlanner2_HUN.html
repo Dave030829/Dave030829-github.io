@@ -8,52 +8,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css\mealPlanner.css">
-    <script src="js\mealPlanner2.js"></script>
+    <script src="js\mealPlanner2_HUN.js"></script>
     <title>Nutrition planner</title>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-        <div class="logo">
-            <img src="images\main_logo.jpg" alt="">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images\main_logo.jpg" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="main_HUN.html">Főoldal</a></li>
+                <li><a href="nutrition_HUN.html">Táplálkozás</a></li>
+                <li><a href="#nutritioninfo">Konditerv</a></li>
+                <li><a href="#contactus">Fogyás</a></li>
+                <li><a href="#contactus">Izomépítés</a></li>
+                <li>
+                    <a href="mealPlanner2.html">
+                        <div class="language">
+                            <img src="images\united-kingdom-mini.png" alt="" >
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <ul class="links">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="nutrition.html">Nutrition</a></li>
-            <li><a href="#nutritioninfo">GYM plan</a></li>
-            <li><a href="#contactus">Weight loss</a></li>
-            <li><a href="#contactus">Muscle building</a></li>
+        
+        <div class="dropdown_menu">
+            <li><a href="main_HUN.html">Főoldal</a></li>
+            <li><a href="nutrition_HUN.html">Táplálkozás</a></li>
+            <li><a href="#nutritioninfo">Konditerv</a></li>
+            <li><a href="#contactus">Fogyás</a></li>
+            <li><a href="#contactus">Izomépítés</a></li>
             <li>
-                <a href="mealPlanner2_HUN.html">
+                <a href="mealPlanner2.html">
                     <div class="language">
-                        <img src="images\hungary-mini.png" alt="" >
+                        <img src="images\united-kingdom-mini.png" alt="" >
                     </div>
                 </a>
             </li>
-        </ul>
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
         </div>
-    </div>
-    
-    <div class="dropdown_menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="nutrition.html">Nutrition</a></li>
-        <li><a href="#nutritioninfo">GYM plan</a></li>
-        <li><a href="#contactus">Weight loss</a></li>
-        <li><a href="#contactus">Muscle building</a></li>
-        <li>
-            <a href="mealPlanner2_HUN.html">
-                <div class="language">
-                    <img src="images\hungary-mini.png" alt="" >
-                </div>
-            </a>
-        </li>
-    </div>
-</header>
+    </header>
 
     <div class="welcome-text">
-      <h1>What is you're goal</h1>
+      <h1>Mi a célod</h1>
     </div>
 
     <div class="box">
@@ -61,18 +61,18 @@
         <div>
           <label>
             <input type="radio" id="cutting" name="gender" value="cutting"onclick="printRandomFood()">
-            <span>Cutting</span>
+            <span>Fogyás</span>
             <p id="eredmeny"></p>
           </label>
       
           <label>
             <input type="radio" id="maintenance" name="gender" value="maintenance"onclick="printRandomFood()">
-            <span>Maintenance</span>
+            <span>Szintentartás</span>
           </label>
       
           <label>
             <input type="radio" id="bulking" name="gender" value="bulking" onclick="printRandomFood()">
-            <span>Bulking</span>
+            <span>Tömegelés</span>
           </label>
         </div>
 
