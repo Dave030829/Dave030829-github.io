@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css\mealPlanner.css">
-    <script src="js\mealPlanner.js"></script>
+    <script src="js\mealPlanner2.js"></script>
     <title>Nutrition planner</title>
 </head>
 <body>
@@ -36,27 +36,35 @@
         </div>
     </header>
 
-    <div class="box">
-        <div class="radio-section">
-            <div>
-                <label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <span>Cutting</span>
-                </label>
-                
-                <label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <span>Maintanance</span>
-                </label>
+    <div class="welcome-text">
+      <h1>What is you're goal</h1>
+    </div>
 
-                <label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <span>Bulking</span>
-                </label>
-            </div>
+    <div class="box">
+      <div class="radio-section">
+        <div>
+          <label>
+            <input type="radio" id="cutting" name="gender" value="cutting"onclick="printRandomFood()">
+            <span>Cutting</span>
+            <p id="eredmeny"></p>
+          </label>
+      
+          <label>
+            <input type="radio" id="maintenance" name="gender" value="maintenance"onclick="printRandomFood()">
+            <span>Maintenance</span>
+          </label>
+      
+          <label>
+            <input type="radio" id="bulking" name="gender" value="bulking" onclick="printRandomFood()">
+            <span>Bulking</span>
+          </label>
         </div>
 
-        
+        <div class="output-style">
+          <div id="food-output"></div>
+        </div>
+      </div>
     </div>
+    
 </body>
 </html>
